@@ -28,3 +28,22 @@ if ( musicians > 4) {
     console.log("not a group");
 }
 
+// ///////////////////
+
+function laugh(num) {
+    var msg = " ";
+    for (var i = 1; i <= num; i++) {
+        if (i === num) {
+            msg += "ha!";
+        } else {
+            msg += "ha";
+        }
+    }
+    return msg;
+}
+
+console.log(laugh(3));
+
+
+
+
