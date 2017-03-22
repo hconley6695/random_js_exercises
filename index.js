@@ -29,9 +29,9 @@ if ( musicians > 4) {
 }
 
 // ///////////////////
-
+// FUNCTION DECLARATION 
 function laugh(num) {
-    var msg = " ";
+    var msg = "";
     for (var i = 1; i <= num; i++) {
         if (i === num) {
             msg += "ha!";
@@ -43,6 +43,23 @@ function laugh(num) {
 }
 
 console.log(laugh(3));
+
+// OR FUNCTION EXPRESSION
+var laugh = function(num) {
+    var msg = "";
+    for (var i = 1; i <= num; i++) {
+        if (i === num) {
+            msg += "ha!";
+        } else {
+            msg += "ha";
+        }
+    }
+    return msg;
+}
+
+console.log(laugh(3));
+
+
 
 // //////////////
 var num = 20;
@@ -80,6 +97,15 @@ function buildTriangle(num){
 }
 
 console.log(buildTriangle(10));
+
+
+// ///////
+
+
+var cry = function() {
+    return "boohoo!";
+}
+console.log(cry());
 
 
 
