@@ -44,6 +44,48 @@ function laugh(num) {
 
 console.log(laugh(3));
 
+// //////////////
+var num = 20;
+
+while (num <= 99 && num >= 1) {
+    if (num >= 3) {
+        console.log(num + ' bottles of juice on the wall! ' + num + ' bottles of juice! Take one down, pass it around...' + (num - 1) + ' bottles of juice on the wall!');
+    } else if (num === 2) {
+        console.log(num + ' bottles of juice on the wall! ' + num + ' bottles of juice! Take one down, pass it around...' + (num - 1) + ' bottle of juice on the wall!');
+    } else {
+        console.log(num + ' bottle of juice on the wall! ' + num + ' bottle of juice! Take one down, pass it around...' + (num - 1) + ' bottles of juice on the wall!');
+    }
+    num = num - 1;
+}
+
+
+// ///////////
+// UDACITY GIVES YOU FIRST FUNCTION AND YOU MUST CALL IT IN SECOND FUNCTION
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+    line += "e";
+  }
+  return line + "\n";
+}
+
+
+function buildTriangle(num){
+    var string = "";
+    for(var i = 1; i <= num; i++){
+        var result = makeLine(i);
+        string = string.concat(result);
+    }
+    return string;
+}
+
+console.log(buildTriangle(10));
+
+
+
+
+
+
 
 
 
