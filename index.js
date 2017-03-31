@@ -156,6 +156,32 @@ var totals = bills.map(function(money) {
 })
 console.log(totals);
 
+// ///////////////////////////
+// Loop over arrays in array.  print out even if number is even and odd if number is odd
+var numbers = [
+    [ 241, 12, 23, 12, 44, 45, 78, 66, 223, 3 ],
+    [ 34, 2, 1, 553, 23, 4, 66, 23, 4, 55 ],
+    [ 67, 56, 45, 553, 49, 55, 5, 428, 452, 3 ],
+    [ 12, 31, 55, 445, 78, 44, 674, 224, 4, 21 ],
+    [ 5, 2, 3, 52, 12, 51, 44, 1, 67, 5 ]
+];
+ 
+// your code goes here
+
+for (var row = 0; row < numbers.length; row++) {
+    for (var col = 0; col < numbers[row].length; col++) {
+        if (numbers[row][col] % 2 === 0) {
+            numbers[row][col] = "even";
+            console.log(numbers[row][col]);
+        } else {
+            numbers[row][col] = "odd";
+            console.log(numbers[row][col]);
+        }
+    }  
+}
+
+console.log(numbers);
+
 
 
 
