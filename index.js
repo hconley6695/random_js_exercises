@@ -222,6 +222,76 @@ console.log(facebookProfile.removeFriend());
 console.log(facebookProfile.postMessage("What's for dinner?"));
 console.log(facebookProfile.deleteMessage(1));
 
+// //////////////////////
+
+var s = "audacity";
+
+var udacityizer = function(s) {  
+    // Right now, the variable s === "audacity"
+    // Manipulate s to make it equal to "Udacity"
+    // Your code goes here!
+    var letter = s[1].toUpperCase();
+    console.log(letter);  
+
+    var string = s.slice(2, s.length);
+    console.log(string);
+
+    var newStr = letter + string;
+    console.log(newStr);
+};
+
+udacityizer(s);
+
+/////////////////////
+var sampleArray = [0,0,7];
+
+var incrementLastArrayElement = function(_array) {
+    var newArray = [];
+
+    var last = _array[_array.length - 1];
+    var increaseLast = last + 1;
+    _array.pop();
+    _array.push(increaseLast);
+    newArray = _array;
+
+    return newArray;
+
+};
+
+console.log(incrementLastArrayElement(sampleArray));
+
+
+// //////////////////
+
+var name = "AlbERt EINstEiN";
+
+function nameChanger(oldName) {
+    var finalName = oldName;
+
+    var array = finalName.split(" ");
+    var firstName = array[0];
+    var changeToLow = firstName.toLowerCase();
+    var separate = changeToLow.split('');
+    var upperFirstLetter = separate[0].toUpperCase();
+    separate.shift();
+    separate.unshift(upperFirstLetter);
+    firstName = separate.join('');
+
+    var lastName = array[1];
+    lastName = lastName.toUpperCase();
+
+    finalName = firstName + " " + lastName;
+
+    
+
+    return finalName;
+};
+
+// Did your code work? The line below will tell you!
+console.log(nameChanger(name));
+
+
+
 
 
 
